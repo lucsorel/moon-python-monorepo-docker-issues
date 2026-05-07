@@ -1,0 +1,5 @@
+moon = "2.2.4"
+uv = "latest"
+
+[settings]
+auto-install = true

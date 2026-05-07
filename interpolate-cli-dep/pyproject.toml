@@ -1,0 +1,24 @@
+[project]
+name = "interpolate-cli-dep"
+version = "0.1.0"
+description = "A CLI tool for interpolation using interpolate-lib."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "click>=8.1,<9",
+    "interpolate-lib",
+]
+
+[tool.uv.sources]
+interpolate-lib = { path = "../interpolate-lib", editable = true }
+
+[project.scripts]
+interpolate-cli = "interpolate_cli_dep:main"
+
+[tool.uv]
+# use the python binary provided by proto
+python-preference = "only-system"
+
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12.0"]
+build-backend = "uv_build"

@@ -1,0 +1,14 @@
+# moon
+.moon/cache/
+.moon/docker/
+.moon/hooks/
+
+# python
+.venv/
+__pycache__/
+.pytest_cache/
+
+
+# root entries
+.env
+.agent.md
