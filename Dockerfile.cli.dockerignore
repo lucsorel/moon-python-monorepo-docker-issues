@@ -1,0 +1,24 @@
+# exclude all
+*
+
+# include general moon and proto files
+!.moon/workspace.yml
+!.moon/toolchains.yml
+!.prototools
+!moon.yml
+
+# include moon definitions of other project
+!interpolate-lib/moon.yml
+!interpolate-cli-dep/moon.yml
+
+# include interpolate-cli project
+!interpolate-cli/pyproject.toml
+!interpolate-cli/README.md
+!interpolate-cli/uv.lock
+!interpolate-cli/moon.yml
+!interpolate-cli/src/
+
+# exclude projects build artifacts
+__pycache__/
+*.pyc
+.venv/

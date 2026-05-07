@@ -1,0 +1,10 @@
+$schema: 'https://moonrepo.dev/schemas/toolchains.yml'
+
+proto:
+  version: '0.56.4'
+
+unstable_python:
+  packageManager: 'uv'
+
+unstable_uv:
+  version: latest

@@ -1,0 +1,14 @@
+layer: application
+language: python
+stack: backend
+
+toolchains:
+  unstable_python:
+    version: 3.12.13
+
+tasks:
+  cli:
+    command: uv run interpolate-cli
+    preset: server
+    options:
+      cache: false

@@ -1,0 +1,13 @@
+$schema: 'https://moonrepo.dev/schemas/project.yml'
+
+layer: library
+language: python
+stack: backend
+
+toolchains:
+  unstable_python:
+    version: 3.12.13
+
+tasks:
+  test:
+    command: 'uv run pytest -v'

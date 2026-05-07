@@ -1,0 +1,14 @@
+tasks:
+  docker-build:
+    command: docker build -t "interpolate/cli:latest" -f Dockerfile.cli .
+    preset: utility
+    inputs: []
+    options:
+      cache: false
+
+  docker-build-dep:
+    command: docker build -t "interpolate/cli-dep:latest" -f Dockerfile.cli-dep .
+    preset: utility
+    inputs: []
+    options:
+      cache: false

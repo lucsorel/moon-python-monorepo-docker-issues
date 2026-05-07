@@ -17,6 +17,7 @@ Run the CLI with the required interpolation options:
 ```bash
 python -m interpolate-cli-dep --value 0.5 --output-min 10.0 --output-max 20.0
 uv run interpolate-cli-dep --value 0.5 --output-min 10.0 --output-max 20.0
+moon r cli-dep:cli -- --value 0.25  --output-min 10.0 --output-max 18.0
 ```
 
 ## CLI arguments

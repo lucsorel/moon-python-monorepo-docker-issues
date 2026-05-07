@@ -1,0 +1,14 @@
+$schema: 'https://moonrepo.dev/schemas/workspace.yml'
+
+projects:
+  interpolate: .
+  lib: interpolate-lib
+  cli: interpolate-cli
+  cli-dep: interpolate-cli-dep
+
+defaultProject: interpolate
+
+vcs:
+  client: git
+  provider: github
+  defaultBranch: main
