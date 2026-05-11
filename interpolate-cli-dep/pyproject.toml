@@ -9,6 +9,11 @@ dependencies = [
     "interpolate-lib",
 ]
 
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+
 [tool.uv.sources]
 interpolate-lib = { path = "../interpolate-lib", editable = true }
 

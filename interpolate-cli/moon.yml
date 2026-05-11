@@ -12,3 +12,5 @@ tasks:
     preset: server
     options:
       cache: false
+  test:
+    command: uv run pytest
